@@ -1,0 +1,1 @@
+# himinds-iot-project-general-self-signed-certificate
