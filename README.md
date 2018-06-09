@@ -5,14 +5,14 @@ A self-signed certificate is a certificate that is signed by the person creating
 
 If you create a certificate, you usually need to handle that the certificate validation fails. As an example, if you use curl, this is done by using the -k (or --insecure) option.
 
-```
+```bash
 curl -k -i -H  "Accept: application/json" "https://localhost:8080/api"
 
 ```
 
 This is how I generate my SSL keys:
 
-```
+```bash
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout server.key -out server.cert
 
 ```
