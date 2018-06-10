@@ -3,6 +3,9 @@
 In order to use HTTPS and establish a secure websocket connection, we need certificates. It can be purchased from a certificate authority (CA), or we can create our own, i.e. a self-signed certificate. 
 A self-signed certificate is a certificate that is signed by the person creating it rather than a trusted certificate authority (CA).
 
+Why do you create a self-signed-certificate?
+Well, it can be used for testing purposes or internal usage.
+
 If you create a certificate, you usually need to handle that the certificate validation fails. As an example, if you use curl, this is done by using the -k (or --insecure) option.
 
 ```
